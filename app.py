@@ -14,7 +14,7 @@ UPLOAD_FOLDER = 'static/uploads'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 if not os.path.exists(UPLOAD_FOLDER):
     os.makedirs(UPLOAD_FOLDER)
-groq_api_key = "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"
+groq_api_key = "YOUR_API_KEY"
 client = groq.Groq(api_key=groq_api_key)
 feature_extractor = DetrFeatureExtractor.from_pretrained("facebook/detr-resnet-50")
 model = DetrForObjectDetection.from_pretrained("facebook/detr-resnet-50")
